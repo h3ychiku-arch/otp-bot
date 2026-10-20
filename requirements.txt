@@ -1,4 +1,0 @@
-requests
-firebase-admin
-beautifulsoup4
-pyotp
