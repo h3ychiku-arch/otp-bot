@@ -431,7 +431,7 @@ def _try_voltx_key(api_key, query):
     return (None, None)
 
 def _fetch_voltx_parallel(query, keys):
-    """সব Voltx key একসাথে parallel এ try করে, যে আগে success দেয় সেটা নেয়।"""
+    """সব Voltx key একসাথে parallel এ try করে, যে আগে success দেয় সেটা নেয়."""
     if not keys:
         return (None, None)
     with ThreadPoolExecutor(max_workers=len(keys)) as ex:
